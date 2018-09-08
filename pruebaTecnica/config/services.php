@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'spotify' => [
+        'client_id' => config('spotify.SPOTIFY_CLIENT_ID'),
+        'client_secret' => config('spotify.SPOTIFY_CLIENT_SECRET'),
+        'redirect' => config('spotify.SPOTIFY_CALLBACK_URL')
+    ],
+
 ];
