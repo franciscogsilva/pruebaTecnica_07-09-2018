@@ -46,9 +46,9 @@ class LanzamientoController extends Controller
 
     public function callback(){
     	$session = new Session(
-		    '9fce456538bf4b149aa8f920d53e694b',
-		    '77057e301d83427e8f3082ede393836f',
-		    'http://localhost:8000/callback'
+		    config('spotify.SPOTIFY_CLIENT_ID'),
+		    config('spotify.SPOTIFY_CLIENT_SECRET'),
+		    config('spotify.SPOTIFY_CALLBACK_URL')
 		);
 
 		// Request a access token using the code from Spotify
